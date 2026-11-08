@@ -1,16 +1,33 @@
-# React + Vite
+# My Book Library
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web app for keeping track of your reading. Search for books, sort them into
+Unread, Reading and Read shelves, see simple reading stats, and get
+recommendations based on the genres you read most.
 
-Currently, two official plugins are available:
+**Live site: https:**//musabala153-cyber.github.io/book-library/
+**Repository:** https://github.com/musabala153-cyber/book-library
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Final project for the web development course.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Discover:** search books by title or author (Open Library API) and add them to a shelf
+- **My Library:** books grouped in tabs by status, with counts, a bar chart of reading stats, and options to move or remove books
+- **Recommendations:** suggestions from your most common genre, or a genre you pick, excluding books you already saved
 
-## Expanding the ESLint configuration
+Saved books are stored in the browser's localStorage, so they stay after a refresh.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech stack
+
+- React (built with Vite)
+- react-router-dom for navigation between the three screens
+- Bootstrap and React-Bootstrap for styling and responsive layout
+- react-toastify for notifications
+- recharts for the stats chart
+- Open Library API (https://openlibrary.org/developers/api), no API key needed
+
+## How to run the project
+
+Requires [Node.js](https://nodejs.org) (LTS version).
+
+1. Install dependencies:
