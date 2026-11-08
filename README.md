@@ -31,3 +31,12 @@ Saved books are stored in the browser's localStorage, so they stay after a refre
 Requires [Node.js](https://nodejs.org) (LTS version).
 
 1. Install dependencies:
+2. Start the development server:
+3. Open the address shown in the terminal. Because the app is configured for
+   GitHub Pages, it is usually http://localhost:5173/book-library/
+
+## Other commands
+
+- `npm run build` creates a production build in `dist`
+- `npm run lint` checks the code for problems
+- `npm run deploy` builds the app and publishes it to GitHub Pages
