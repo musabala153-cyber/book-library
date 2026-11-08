@@ -1,3 +1,5 @@
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import { Routes, Route, NavLink } from 'react-router-dom'
 import { Container, Nav, Navbar } from 'react-bootstrap'
 import Discover from './pages/Discover'
@@ -28,6 +30,7 @@ function App() {
           <Route path="/recommendations" element={<Recommendations />} />
         </Routes>
       </Container>
+      <ToastContainer position="bottom-right" autoClose={2500} />
     </>
   )
 }

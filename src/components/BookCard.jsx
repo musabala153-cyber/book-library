@@ -1,6 +1,6 @@
 import { Card } from 'react-bootstrap'
 
-function BookCard({ book }) {
+function BookCard({ book, children }) {
   const coverUrl = book.cover_i
     ? `https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`
     : null
@@ -23,6 +23,7 @@ function BookCard({ book }) {
           {book.author_name ? book.author_name[0] : 'Unknown author'}
         </Card.Text>
       </Card.Body>
+      {children && <Card.Footer>{children}</Card.Footer>}
     </Card>
   )
 }

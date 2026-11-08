@@ -1,3 +1,4 @@
+import AddToLibrary from '../components/AddToLibrary'
 import { useState } from 'react'
 import { Form, Button, InputGroup, Row, Col, Spinner, Alert } from 'react-bootstrap'
 import BookCard from '../components/BookCard'
@@ -70,7 +71,9 @@ function Discover() {
       <Row xs={2} md={3} lg={4} className="g-4">
         {books.map((book) => (
           <Col key={book.key}>
-            <BookCard book={book} />
+            <BookCard book={book}>
+              <AddToLibrary book={book} />
+            </BookCard>
           </Col>
         ))}
       </Row>
