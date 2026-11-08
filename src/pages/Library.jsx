@@ -1,3 +1,4 @@
+import StatsChart from '../components/StatsChart'
 import { Tabs, Tab, Row, Col, Form, Button, Alert } from 'react-bootstrap'
 import { toast } from 'react-toastify'
 import BookCard from '../components/BookCard'
@@ -16,6 +17,7 @@ function Library() {
   return (
     <>
       <h1 className="mb-3">My Library</h1>
+      <StatsChart books={books} />
       <Tabs defaultActiveKey="Reading" className="mb-3">
         {STATUSES.map((status) => {
           const list = books.filter((b) => b.status === status)
